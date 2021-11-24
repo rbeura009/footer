@@ -1,0 +1,32 @@
+.row{
+  width: 80%;
+  margin: 0 auto;
+  border: 1px solid red;
+  box-sizing: border-box;
+}
+
+.row .column{
+  width: 100%;
+  display: inline-block;
+}
+
+.row .column .column-header{
+  font-size: 2rem
+}
+
+.row .column .column-header span{
+  font-size: 0.5rem
+}
+
+.row .column .item-container{
+    display: none;
+}
+
+@media only screen and (min-width: 768px) {
+.row .column{
+  width: 24%;
+}
+.row .column .item-container{
+    display: block;
+}
+}
